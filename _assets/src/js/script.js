@@ -23,11 +23,14 @@ document.getElementById('overlay').addEventListener('click', closeOverlay);
 
 const showMoreBtn = document.querySelector('.button-show-more');
 const show = document.querySelector('.show-more-pictures');
-showMoreBtn.addEventListener('click', () => {
-  show.classList.toggle('more-pictures-show-more');
-  if (showMoreBtn.innerHTML === 'View More') {
-    showMoreBtn.innerHTML = 'View Less';
-  } else {
-    showMoreBtn.innerHTML = 'View More';
-  }
-});
+
+if (showMoreBtn !== null) {
+  showMoreBtn.addEventListener('click', () => {
+    show.classList.toggle('more-pictures-show-more');
+    if (showMoreBtn.innerHTML === 'View More') {
+      showMoreBtn.innerHTML = 'View Less';
+    } else {
+      showMoreBtn.innerHTML = 'View More';
+    }
+  });
+}
