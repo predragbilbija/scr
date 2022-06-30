@@ -78,42 +78,7 @@ use App\Template;
         <p class="text-center leading-loose font-lato">Fill out the form below, and we will give you a call within 24 hours.</p>
         <div class="p-5 mt-12 bg-center bg-cover bg-no-repeat " style="background-image: url(https://lirp.cdn-website.com/26a6bb9c/dms3rep/multi/opt/reversebg-2880w.png) !important;">
           <div class="bg-white py-12 md:px-7 shadow-11 about-form">
-          <?php echo do_shortcode('[contact-form-7 id="23" title="About page form"]'); ?>
-
-            <!-- <form class="py-4">
-             <div class="flex flex-col md:flex-row">
-              <div class="md:w-1/3 px-4 mt-2 flex flex-col">
-                <label class="font-lato">Name</label>
-                <input type="text" class="text-black border-solid border-2 px-2 my-1 h-10" />
-              </div>
-              <div class="md:w-1/3 px-4 mt-2 flex flex-col">
-                <label class="font-lato">Phone Number</label>
-                <input type="tel" class="text-black border-solid border-2 px-2 my-1 h-10" />
-              </div>
-              <div class="md:w-1/3 px-4 mt-2 flex flex-col">
-                <label class="font-lato">Email</label>
-                <input type="email" class="text-black border-solid border-2 px-2 my-1 h-10" />
-              </div>
-             </div>
-              <div class="w-full px-4 mt-2 flex flex-col">
-                <label class="font-lato">City, State</label>
-                <input type="text" class="text-black border-solid border-2 px-2 my-1 h-10" />
-              </div>
-              <div class="w-full px-4 mt-2 flex flex-col">
-                <label class="font-lato">Message</label>
-                <textarea  class="text-black h-20 border-solid border-2 px-2 my-1"></textarea>
-              </div>
-              <div class="h-20 pl-4 mt-2">
-                <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz&amp;co=aHR0cHM6Ly93d3cuc2NyMjQ3LmNvbTo0NDM.&amp;hl=en&amp;v=g9jXH0OtfQet-V0Aewq23c7K&amp;theme=light&amp;size=normal&amp;badge=checkbox&amp;cb=41q0uy2v59p5" role="presentation" name="a-51773v6huna5" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-              </div>
-              <a
-              class="text-white bg-[#005f9c] w-36 md:w-200 h-60 no-underline  flex justify-center items-center rounded my-5 mx-4 cursor-pointer hover:bg-[#0069ad] text-xl"
-            >
-              <span class="p-2 text-sm uppercase font-lato">
-                Submit
-              </span>
-            </a>
-            </form> -->
+          <?php echo do_shortcode('[contact-form-7 id="22" title="About page"]'); ?>
           </div>
         </div>
       </div>

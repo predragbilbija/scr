@@ -102,16 +102,33 @@
           />
         </a>
        </div>
-      
-
-       </div>
-       <div>
-       <?php get_template_part('_template-parts/mobile-nav') ?>
-       </div>
-
     
+       </div>
+
+       <?php 
+        wp_nav_menu (
+          array (
+              'theme_location' => 'starter_primary_menu',
+              'depth' => 1,
+              'container' => 'nav',
+              'container_class' => "mobile-meny",
+              'fallback_cb' => false
+          )
+       ); 
+      ?>
+      
       </div>
-      <div class="hidden p-4 lg:flex items-center justify-center">
-      <?php get_template_part('_template-parts/desktop-nav') ?>
-      </div>
+    
+      <?php 
+        wp_nav_menu (
+          array (
+              'theme_location' => 'starter_primary_menu',
+              'depth' => 1,
+              'container' => 'nav',
+              'container_class' => "desktop-meny",
+              'fallback_cb' => false
+          )
+       ); 
+      ?>
+     
     </section>

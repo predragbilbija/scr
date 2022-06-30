@@ -121,6 +121,25 @@
     padding: 16px;
     transition: margin-left 0.5s;
   }
+
+  .active-page {
+    color: #0a58ca;
+    border-bottom: #0a58ca 2px solid;
+  }
+
+  .active-page:hover {
+    padding-bottom: none;
+    color: #0a58ca;
+    background-image: none;
+    background-size: 0;
+    border-bottom: #0a58ca 2px solid;
+    border-bottom-width: 0;
+    transition: none;
+  }
+}
+
+.current-menu-item a {
+  @apply active-page ;
 }
 
 /* contact forms section */
@@ -160,9 +179,7 @@
       @apply h-20 pl-4 mt-2;
     }
 
-    .wpcf7-spinner,
-    .wpcf7-response-output,
-    .wpcf7-not-valid-tip {
+    .wpcf7-spinner {
       @apply hidden;
     }
 
@@ -206,14 +223,43 @@
       @apply h-20 pl-4 mt-2;
     }
 
-    .wpcf7-spinner,
-    .wpcf7-response-output,
-    .wpcf7-not-valid-tip {
+    .wpcf7-spinner {
       @apply hidden;
     }
 
     .wpcf7-not-valid {
       border: 2px solid red;
     }
+  }
+}
+
+/* desktop and mobile nav */
+@layer components {
+  .desktop-meny {
+    @apply hidden p-4 lg:flex items-center justify-center;
+  }
+
+  .desktop-meny ul {
+    @apply hidden lg:flex justify-center flex-wrap list-none m-0;
+  }
+
+  .desktop-meny li {
+    @apply m-0 py-0 px-4 lg:px-8 no-underline uppercase;
+  }
+
+  .desktop-meny a {
+    @apply font-lato text-sm link-underline link-underline-blue text-black hover:text-[#0a58ca];
+  }
+
+  .mobile-meny ul {
+    @apply pt-6;
+  }
+
+  .mobile-meny li {
+    @apply m-0 py-6 px-4 lg:px-8 no-underline uppercase w-max;
+  }
+
+  .mobile-meny a {
+    @apply font-lato text-sm link-underline link-underline-blue text-black hover:text-[#0a58ca] focus:text-[#0a58ca];
   }
 }

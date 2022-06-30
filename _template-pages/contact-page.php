@@ -65,7 +65,7 @@ use App\Template;
             </div>
             <div class="mt-8 md:mt-0 md:ml-4 md:w-1/2">
               <div class="bg-white py-8 md:px-4 shadow-11 contact-form">
-                <?php echo do_shortcode('[contact-form-7 id="22" title="Contact page form"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="23" title="Contact page"]'); ?>
               </div>
             </div>
 
